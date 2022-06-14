@@ -26,11 +26,11 @@ AFRAME.registerComponent("bullets", {
 
         var camera = document.querySelector("#camera").object3D;
 
-        //get the camera direction as Three.js Vector
+        // Obtener la dirección de la cámara como un vector de Three.js
         var direction = new THREE.Vector3();
         camera.getWorldDirection(direction);
 
-        //set the velocity and it's direction
+        // Establecer la velocidad y su dirección
         bullet.setAttribute("velocity", direction.multiplyScalar(-10));
 
         var scene = document.querySelector("#scene");
@@ -41,30 +41,30 @@ AFRAME.registerComponent("bullets", {
   },
 
   removeBullet: function (e) {
-    //Original entity (bullet)
+    // Entidad original (bala)
     console.log(e.detail.target.el);
 
-    //Other entity, which bullet touched.
+    // Otra entidad que la bala toque
     console.log(e.detail.body.el);
 
-    //bullet element
+    // Elemento de la bala
 
 
-    //element which is hit
+    // Elemento que es golpeado
  
 
     if (elementHit.id.includes("box")) 
       {
-        //set material attribute
+        // Establecer el atributo "material"
         
 
-        //impulse and point vector
+        // Impulso y vector punto
         
 
-        //remove event listener
+        // Eliminar escucha de evento
         
         
-        //remove the bullets from the scene
+        // Remover las balas de la escena
       
     }
   },
