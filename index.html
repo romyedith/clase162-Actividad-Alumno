@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <title>Shooting Game in Virtual Reality</title>
+    <title>Juego de disparo en realidad virtual (VR)</title>
     <script src="https://aframe.io/releases/1.0.4/aframe.min.js"></script>   
     <script src="https://cdn.jsdelivr.net/gh/n5ro/aframe-physics-system@v4.0.1/dist/aframe-physics-system.min.js"></script>
     
@@ -10,7 +10,7 @@
   <body>
     <a-scene id="scene">
 
-      <!--Assets-->
+      <!-- Recursos -->
       <a-assets>        
         <a-asset-item
           id="shooter"
@@ -19,10 +19,10 @@
         
       </a-assets>
       
-      <!--Light-->
+      <!-- Luces -->
       <a-entity light="type: ambient; color: yellow; intensity:0.5"></a-entity>
 
-      <!--Camera and Cursor-->
+      <!-- Cámara y cursor -->
       <a-entity
         id="camera"
         camera
@@ -41,10 +41,10 @@
         <a-cursor></a-cursor>        
       </a-entity>
 
-      <!--Bullets-->
+      <!-- Balas -->
       <a-entity bullets></a-entity>
 
-      <!--Ground-->
+      <!-- Terreno -->
       <a-plane
         id="ground"
         repeat="5 5"
@@ -58,7 +58,7 @@
       >
       </a-plane>
 
-      <!--Walls-->
+      <!-- Muros -->
       <!-- <a-box color="#1469C9" id="wall1" position="-20 1.5 -20"  depth="1" height="50" width="10" static-body></a-box>
 
       <a-box color="#1469C9" id="wall2" position="0 1.5 -20"  depth="1" height="50" width="10" static-body></a-box>
@@ -73,7 +73,7 @@
       
       <a-box color="#2889DF" id="wall7" position="30 1.5 -20"  depth="1" height="50" width="10" opacity="0.5" ></a-box> -->
 
-      <!--Boxes-->
+      <!-- Cajas -->
       <a-box  id="box1" position="-2 1.5 -10" color="tomato" depth="1" height="1.2" width="1.2" static-body></a-box>
 
       <a-box  id="box2" position="0 1.5 -10" color="tomato" depth="1" height="1.2" width="1.2" static-body></a-box>
