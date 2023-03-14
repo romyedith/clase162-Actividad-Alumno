@@ -75,7 +75,10 @@ AFRAME.registerComponent("bullets", {
           var scene = document.querySelector("#scene");
           scene.removeChild(element);
         // Impulso y vector punto
-        
+        var impulse = new cancelAnimationFrame.Vec3(-2, 2, 1);
+        var worldPoint = new cancelAnimationFrame.Vec3().copy(elementHit.getAttribute("position"));
+
+        elementHit.body.applyImpulse(impulse, worldPoint);
 
         // Eliminar escucha de evento
         
